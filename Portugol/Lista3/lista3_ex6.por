@@ -1,21 +1,29 @@
-/* 
-Construa um sistema para ler uma variável numérica N e imprimi-la somente se a mesma for maior que 100, 
-caso contrário imprimi-la com o valor zero.
+/*
+2- Faça um programa que pegue um número do teclado e calcule a soma de todos os números  de 1 até ele. 
+Ex.: o usuário entra 7, o programa vai mostrar 28, pois  1+2+3+4+5+6+7=28.
 */
-programa 
+programa
 {
-	
 	funcao inicio()
 	{
-		inteiro n 
+		inteiro num
+		inteiro numRes = 0
+		inteiro soma = 0 
 		escreva("Digite um número: ")
-		leia(n)
-		limpa()
-		se( n > 100) {
-			escreva("Este número é ", n)
-		} senao {
-			escreva("Este número é o 0")
-		}
+		leia(num)
+
+
+		faca 
+		{
+			 num = num -1
+			escreva("\n", num)
+			
+		} enquanto (num >1)
+			faca 
+			{
+			soma = soma + num				
+			} 
+			
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 155; 
+ * @POSICAO-CURSOR = 438; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

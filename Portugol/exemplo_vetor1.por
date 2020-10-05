@@ -1,21 +1,29 @@
-/* 
-Construa um sistema para ler uma variável numérica N e imprimi-la somente se a mesma for maior que 100, 
-caso contrário imprimi-la com o valor zero.
-*/
-programa 
+programa
 {
+	
+	inclua biblioteca Util
+	
 	
 	funcao inicio()
 	{
-		inteiro n 
-		escreva("Digite um número: ")
-		leia(n)
-		limpa()
-		se( n > 100) {
-			escreva("Este número é ", n)
-		} senao {
-			escreva("Este número é o 0")
+		const inteiro LIMITE = 10
+		inteiro valoresDado[LIMITE]
+		
+		escreva("Sorteando valores")
+		pula()
+		para (inteiro x = 0 ; x < LIMITE; x++) {
+			valoresDado[x] = Util.sorteia(1, 6)
 		}
+		para (inteiro x = 0; x < LIMITE; x++){
+			escreva("O valor ",(x+1), " foi ",valoresDado[x])
+			pula()
+			
+		}
+		
+		
+	}
+	funcao pula(){
+		escreva("\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 155; 
+ * @POSICAO-CURSOR = 405; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

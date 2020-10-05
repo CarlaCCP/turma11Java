@@ -1,7 +1,3 @@
-/* 
-Receber valores de base e altura de um triângulo e verificar se são valores válidos 
-(positivos maiores que zero). Em caso afirmativo, calcular a área do triângulo.
-*/
 programa 
 {
 	inclua biblioteca Matematica --> mat
@@ -13,23 +9,34 @@ programa
 		leia(altura)
 		escreva("Digite a base do triângulo: ")
 		leia(base)
-		limpa()
+		escreva("+-----------------------------------+\n")
 			se (altura >0 e base >0) {
 				area = (base * altura) /2 
-					escreva("A área do triângulo é igual a " , area)
-		
+					escreva("A área do triângulo é igual a " , area, "\n")
+					linha()
 		} senao {
-			escreva("Não existe área") 
+			escreva("Não existe área\n") 
+			linha()
 		}
-	
-	}
+			
+	} funcao linha() {
+				escreva("+-----------------------------------+\n")
+			}
+	 funcao areaTriangulo(real base, real altura) {
+	 	real area
+	 	area = ((base * altura)/2)
+	 	se (altura >0 e base >0) {
+	 		escreva("A área do triângulo é igual a " , area, "\n")
+	 	} senao {
+	 	
+	 }
 }	
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 570; 
+ * @POSICAO-CURSOR = 746; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

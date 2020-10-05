@@ -1,21 +1,19 @@
-/* 
-Construa um sistema para ler uma variável numérica N e imprimi-la somente se a mesma for maior que 100, 
-caso contrário imprimi-la com o valor zero.
-*/
-programa 
+programa
 {
 	
 	funcao inicio()
 	{
-		inteiro n 
-		escreva("Digite um número: ")
-		leia(n)
-		limpa()
-		se( n > 100) {
-			escreva("Este número é ", n)
-		} senao {
-			escreva("Este número é o 0")
-		}
+		inteiro diasVida, dia=0, mes = 0, ano = 0
+		escreva("Digite o dia em que você nasceu: ")
+		leia(dia)
+		escreva("Digite o mes que você nasceu: ")
+		leia(mes)
+		escreva("Digite o ano que você nasceu: ")
+		leia(ano)
+
+		ano= (2020 - ano)*365
+		diasVida = ano -90
+		escreva("Você viveu ", diasVida," dias de vida")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 155; 
+ * @POSICAO-CURSOR = 349; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
