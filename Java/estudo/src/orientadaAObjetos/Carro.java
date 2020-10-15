@@ -16,7 +16,7 @@ public class Carro {
 		this.velocidadeAtual = velocidadeNova;
 	}
 	
-	int pegaMarcha() { // métodos
+	int pegaMarcha() { // métodos // publica 
 		if (this.velocidadeAtual < 0) {
 			return - 1;
 		}
