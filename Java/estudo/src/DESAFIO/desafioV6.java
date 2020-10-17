@@ -61,7 +61,8 @@ public class desafioV6 {
 		if(opc == 'S') {
             System.out.print("Vamos começar as compras? Digite 1 para iniciar: ");
 			opcao = leia.nextInt();
-            if(opcao != 1){
+           
+			if(opcao != 1){
                 do{
                     System.out.print("Valor digitado incorreto. Digite 1 para iniciar: ");
                     opcao = leia.nextInt();

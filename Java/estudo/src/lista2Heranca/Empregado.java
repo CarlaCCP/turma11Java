@@ -1,6 +1,6 @@
 package lista2Heranca;
 
-public class Empregado extends Pessoa21 {
+public class Empregado extends Pessoa {
 private int codigoSetor;
 private double salarioBase;
 private double imposto; //porcentagem retida dos impostos

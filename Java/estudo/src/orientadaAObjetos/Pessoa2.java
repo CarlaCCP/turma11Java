@@ -1,12 +1,12 @@
 package orientadaAObjetos;
 
-public class Pessoa {
+public class Pessoa2 {
 	
 	private String primeiroNome;
 	private String ultimoNome;
 	private String nomeDoMeio;
 	
-	public Pessoa (String primeiro , String meio, String ultimo) { // consultor
+	public Pessoa2 (String primeiro , String meio, String ultimo) { // consultor
 		
 		primeiroNome = primeiro;
 		ultimoNome = ultimo;

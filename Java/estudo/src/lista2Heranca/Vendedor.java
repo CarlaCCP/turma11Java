@@ -1,6 +1,6 @@
 package lista2Heranca;
 
-public class Vendedor  extends Pessoa21{
+public class Vendedor  extends Pessoa{
 private double valorVendas;
 private double atributoComissao;
 

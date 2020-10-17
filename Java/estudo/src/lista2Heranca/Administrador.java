@@ -1,6 +1,6 @@
 package lista2Heranca;
 
-public class Administrador extends Pessoa21 {
+public class Administrador extends Pessoa {
 	private double ajudaDeCusto;
 
 	public double getAjudaDeCusto() {

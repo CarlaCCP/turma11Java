@@ -4,7 +4,7 @@ public class programaNome {
 
 	public static void main(String[] args) {
 		
-		Pessoa pessoa1 = new Pessoa("Maria", "Antonia" , "Oliveira");
+		Pessoa2 pessoa1 = new Pessoa2("Maria", "Antonia" , "Oliveira");
 		
 		System.out.println(pessoa1.getNomeCompleto());
 

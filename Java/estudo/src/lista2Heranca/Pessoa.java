@@ -1,6 +1,6 @@
 package lista2Heranca;
 
-public class Pessoa21 {
+public class Pessoa {
 	
 	private String nome;
 	private String endereco;
@@ -35,23 +35,23 @@ public class Pessoa21 {
 	
 	// construtor 
 	
-	public Pessoa21 () {
+	public Pessoa () {
 		
 	}
 	
-	public Pessoa21(String nome, String endereco, String telefone) {
+	public Pessoa(String nome, String endereco, String telefone) {
 		this.nome = nome;
 		this.endereco = endereco;
 		this.telefone = telefone;
 	}
 	
-	public Pessoa21(String nome, String telefone) {
+	public Pessoa(String nome, String telefone) {
 
 		this.telefone = telefone;
 		
 	}
 	
-	public Pessoa21(String endereco) {
+	public Pessoa(String endereco) {
 		
 		this.endereco = endereco;
 	}

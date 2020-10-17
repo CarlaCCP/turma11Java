@@ -1,6 +1,6 @@
 package lista2Heranca;
 
-public class Operario extends Pessoa21 {
+public class Operario extends Pessoa {
 private double valorProducao; //que corresponde ao valor monetário dos artigos efetivamente produzidos pelo operário
 private double comissao;
 public double getValorProducao() {
