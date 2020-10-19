@@ -4,19 +4,16 @@ public class testeAnimal {
 
 	public static void main(String[] args) {
 		
-		Animal cachorro = new Animal (" Mel", 24, "Corre");
-		Animal cavalo = new Animal (" Jorge", 10, "Corre");
-		Animal preguica = new Animal ("Teresa", 5 , "Sobe");
+		Cachorro cachorro = new Cachorro (" Mel", 24, true);
+		Cavalo cavalo = new Cavalo (" Jorge", 10, true);
+		Preguica preguica = new Preguica ("Teresa", 5 ,true);
 		
 		cachorro.apresentaAnimal();
-		cachorro.emiteSom();
-		
+
 		cavalo.apresentaAnimal();
-		cavalo.emiteSom();
-		
 		
 		preguica.apresentaAnimal();
-		preguica.emiteSom();
+		
 		
 
 	}

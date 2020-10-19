@@ -1,40 +1,20 @@
 package lista3InterfacePoli;
 
-public class Animal {
+public abstract class Animal {
+	
 	private String nome;
 	private int anoNascimento;
-	private String acao;
-	public Cachorro cachorro;
-	public Cavalo cavalo;// 
-	public Preguica preguica;
 	
 
-	public Animal(String nome, int anoNascimento, String acao) {
+	public Animal(String nome, int anoNascimento) {
 		this.nome = nome;
 		this.anoNascimento = anoNascimento;
-		this.acao = acao;
 	}
 	
 	public Animal () {
 		
 	}
 
-	
-	public String getAcao() {
-		return acao;
-	}
-
-	public void setAcao(String acao) {
-		this.acao = acao;
-	}
-
-	public Cachorro getCachorro() {
-		return cachorro;
-	}
-
-	public void setCachorro(Cachorro cachorro) {
-		this.cachorro = cachorro;
-	}
 
 	public String getNome() {
 		return nome;
@@ -62,7 +42,7 @@ public class Animal {
 	
 		System.out.println("Nome do animal: " + getNome());
 		System.out.println("Idade do animal: "  + getAnoNascimento());
-		System.out.println("Ação do animal: " + getAcao());
+		//System.out.println("Ação do animal: " + getAcao());
 		
 	}
 }
