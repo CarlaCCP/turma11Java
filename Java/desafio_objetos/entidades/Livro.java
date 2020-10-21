@@ -21,6 +21,12 @@ public class Livro { // tornar abstrata
 		
 	}
 	
+	public Livro (String nome, String descricao, double valor) {
+		this.nome = nome;
+		this.descricao = descricao;
+		this.valor = valor;
+	}
+	
 	public Autor getOutroAutor() {
 		return outroAutor;
 	}
@@ -68,6 +74,8 @@ public class Livro { // tornar abstrata
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
+	
+	
 
 	public void mostrarDetalhes() { // método
 
@@ -118,6 +126,7 @@ public class Livro { // tornar abstrata
 		this.valor -= this.valor * porcentagem; // valor = (valor * porcentagem) - valor
 		return true;
 	}
+	
 
 	public boolean temAutor() { // checa se existe autor
 		return this.autor != null;

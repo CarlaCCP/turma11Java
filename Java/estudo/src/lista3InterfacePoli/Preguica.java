@@ -33,7 +33,7 @@ private boolean sobe;
 
 
 
-
+	@Override
 	public void apresentaAnimal () {
 		System.out.println("PREGUIÇA");
 		System.out.println("\nNome do animal: " + getNome());

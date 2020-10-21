@@ -1,6 +1,5 @@
-package entidades;
+package desafio2;
 
 public class CarrinhoDeCompras {
-	
 
 }

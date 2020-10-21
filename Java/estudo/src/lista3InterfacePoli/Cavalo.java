@@ -29,7 +29,7 @@ private boolean corre;
 		System.out.println("O som que o cavalo faz é: uhauahfh");
 	}
 	
-	
+	@Override
 	public void apresentaAnimal () {
 		System.out.println("CAVALO");
 		System.out.println("\nNome do animal: " + getNome());

@@ -25,7 +25,7 @@ public class Cachorro extends Animal{
 		this.corre = corre;
 	}
 
-
+	@Override
 	public void apresentaAnimal () {
 		System.out.println("CACHORRO");
 		System.out.println("\nNome do animal: " + getNome());
