@@ -14,7 +14,7 @@ public class CadastroLivro {
 		autor.setEmail("rodrigo.turini@caelum.com.br");
 		autor.setCpf("123.456.789.10");
 		
-		Livro livro = new Livro(autor); // classe é apenas um molde, livro é o objeto
+		LivroFisico livro = new LivroFisico(autor); // classe é apenas um molde, livro é o objeto
 		livro.setNome("Java 8 Prática"); 
 		livro.setDescricao("Novos recursos da linguagem");
 		livro.adicionaValor(59.90);
@@ -32,7 +32,7 @@ public class CadastroLivro {
 		outroAutor.setCpf("123.456.789.10");
 		
 		
-		Livro outroLivro = new Livro (outroAutor);
+		LivroFisico outroLivro = new LivroFisico (outroAutor);
 		outroLivro.setNome("Lógica de Programação");
 		outroLivro.setDescricao("Crie seus primeiros programas"); 
 		outroLivro.adicionaValor(59.90);

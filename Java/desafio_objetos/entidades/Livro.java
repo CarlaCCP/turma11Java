@@ -1,6 +1,6 @@
 package entidades;
 
-public class Livro { // tornar abstrata
+public abstract class Livro { // tornar abstrata
 	/*
 	 * São chamados de atributos não estão dentro do main por isso não são variaveis
 	 * 
@@ -12,6 +12,8 @@ public class Livro { // tornar abstrata
 	private String isbn;
 	private Autor autor; // uma classe pode ter outra classe como atributo
 	private Autor outroAutor;
+	private Ebook ebook;
+	
 
 // construtor 
 	public Livro(Autor autor) {
@@ -77,6 +79,12 @@ public class Livro { // tornar abstrata
 	
 	
 
+	public Ebook getEbook() {
+		return ebook;
+	}
+	public void setEbook(Ebook ebook) {
+		this.ebook = ebook;
+	}
 	public void mostrarDetalhes() { // método
 
 		System.out.println("\nMostrando detalhes do livro");
@@ -126,6 +134,7 @@ public class Livro { // tornar abstrata
 		this.valor -= this.valor * porcentagem; // valor = (valor * porcentagem) - valor
 		return true;
 	}
+	
 	
 
 	public boolean temAutor() { // checa se existe autor

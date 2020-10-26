@@ -3,6 +3,7 @@ package entidades;
 public class Ebook extends Livro { // ebook herda as caracteristicas de livro
 
 	private boolean waterMark;
+	
 
 	public Ebook() {
 
@@ -41,8 +42,11 @@ public class Ebook extends Livro { // ebook herda as caracteristicas de livro
 	public void setWaterMark(boolean waterMark) {
 		this.waterMark = waterMark;
 	}
+	
+	
 
 	// metodo herdado
+
 	@Override // é uma anotação, ajudará o compilador a validar o método.
 	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.15) {
@@ -50,7 +54,7 @@ public class Ebook extends Livro { // ebook herda as caracteristicas de livro
 		}
 
 		this.setValor(this.getValor() - (this.getValor() * porcentagem));
-		return true;
+		return true;	
 	}
 
 }
