@@ -9,7 +9,6 @@ public abstract class Livro { // tornar abstrata
 	private String nome;
 	private String descricao;
 	private double valor; //
-	private String isbn;
 	private Autor autor; // uma classe pode ter outra classe como atributo
 	private Autor outroAutor;
 	private Ebook ebook;
@@ -61,13 +60,6 @@ public abstract class Livro { // tornar abstrata
 		this.valor = valor;
 	}
 
-	public String getIsbn() {
-		return isbn;
-	}
-
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
-	}
 
 	public Autor getAutor() {
 		return autor;
@@ -92,13 +84,7 @@ public abstract class Livro { // tornar abstrata
 		System.out.println("Nome: " + nome);
 		System.out.println("Descrição: " + descricao);
 		System.out.println("Valor: " + valor);
-		System.out.println("ISBN: " + isbn);
 		autor.mostrarDetalhes(); // - não aceita, pesquisar sobre
-
-		if (this.temAutor()) {
-			autor.mostrarDetalhes();
-		}
-
 		System.out.println("=====");
 
 		/*

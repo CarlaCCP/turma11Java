@@ -1,4 +1,4 @@
-
+use db_Estoque;
 #populando 
 INSERT INTO tb_produtos (nome,preco,marca_id) VALUES ("Sapato","60.53",11);
 INSERT INTO tb_produtos (nome,preco,marca_id) VALUES ("Camisa","58.18",9);
@@ -102,3 +102,4 @@ INSERT INTO tb_produtos (nome,preco,marca_id) VALUES ("Blusa","81.72",7);
 INSERT INTO tb_produtos (nome,preco,marca_id) VALUES ("Calça","66.29",6);
 
 select * from tb_produtos;
+select * from tb_marcas;
