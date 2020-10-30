@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@Entity //tabela
+public class Produto {
+	
+	@Column // coluna
+	private int id;
+	
+	@Column
+	private String nome;
+	
+}
